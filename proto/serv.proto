@@ -1,0 +1,18 @@
+syntax="proto3";
+
+package proto;
+
+message Request{
+
+    string sub=1;
+    string val=2;
+}
+
+message Response{
+
+    string result =1;
+}
+
+service Kafkaservice{
+    rpc apiservice (Request) returns (Response);
+}
