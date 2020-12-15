@@ -63,7 +63,7 @@ func main(){
 		} else {
 			fmt.Printf("Consumer error: %v (%v)\n", err, uname)
 		}
-	}
+	
 		for {
 			acv, err := d.ReadMessage(-1)
 			if err == nil {
@@ -125,7 +125,7 @@ func main(){
 			break
 		}
 	}
-
+	}
 	c.Close()
 	d.Close()
 }
